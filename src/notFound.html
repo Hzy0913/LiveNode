@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=1300">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <title>notFound</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<img src="img/404.png" alt="" class="notfound">
+
+<script>
+  $.ajax({
+    type: "POST",
+    url: "/api/testApi",
+    success: function(data){
+      console.log(data);
+    }
+  })
+</script>
+</body>
+</html>

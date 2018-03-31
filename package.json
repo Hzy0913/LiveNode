@@ -1,0 +1,22 @@
+{
+  "name": "Livenode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build",
+  "scripts": {
+    "start": "pm2 start build/dev-server.js",
+    "build": "pm2 start build/build.js -i max --watch",
+    "restart": "pm2 reload build",
+    "stop": "pm2 stop all",
+    "list": "pm2 list"
+  },
+  "author": "hzy0913",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0",
+    "pm2": "^2.10.2"
+  }
+}
