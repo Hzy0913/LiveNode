@@ -1,5 +1,5 @@
 {
-  "name": "Livenode",
+  "name": "LiveNode",
   "version": "1.0.0",
   "description": "",
   "main": "build",
@@ -10,7 +10,6 @@
     "stop": "pm2 stop all",
     "list": "pm2 list"
   },
-  "author": "hzy0913",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.23.6",
