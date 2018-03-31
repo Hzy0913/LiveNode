@@ -64,7 +64,7 @@ const proxyTable = [
 ];
 ```
 `host` 为接口域名地址，`api` 为接口地址，可以配置多个接口转发。
-如需代理restfull API，例如接口为http://www.binlive.cn/api/testApi和http://www.binlive.cn/api/testApi2等接口，只需设置api为
+如需代理restfull API，例如接口为http://www.binlive.cn/api/testApi 和 http://www.binlive.cn/api/testApi2 等接口，只需设置api为
 ```js
 {
     host: 'http://www.binlive.cn',
