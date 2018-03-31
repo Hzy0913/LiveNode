@@ -1,4 +1,4 @@
-const port = 3058;
+const port = 3000;
 const reload = true;
 const spaHistory = false;
 const notFound = '/notFound.html';
