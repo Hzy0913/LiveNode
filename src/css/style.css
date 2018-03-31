@@ -1,0 +1,10 @@
+body{padding: 0;margin: 0px}
+.container{width: 500px; margin: 0 auto;padding-top: 10%;padding-bottom: 100px}
+.logo{width: 500px; margin: 0 auto}
+.title{color: #33333d;font-size: 16px;font-weight: 500;text-align: center}
+.page{background-color: #fdfdfd;border-top: 1px solid #eee;padding-top: 100px;padding-bottom: 100px}
+.page .content{width: 800px; margin: 0 auto;}
+.page .content h1{color: #222c36}
+.page .content p{color: #33333d;font-size: 15px;letter-spacing: .5px}
+.notfound{width: 80%; margin: 0 auto;display: block}
+.binlive-logo{width: 80px;position: fixed;right: 20px; top: 20px;z-index: 99}
