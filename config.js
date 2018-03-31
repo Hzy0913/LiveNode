@@ -1,7 +1,7 @@
 const port = 3058;
 const reload = true;
-const spaHistory = false;
-const notFound = '/notFound.html';
+const spaHistory = true;
+const notFound = '';
 const proxyTable = [
   {
     host: 'http://www.binlive.cn',
