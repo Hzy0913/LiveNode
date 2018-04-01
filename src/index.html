@@ -19,13 +19,61 @@
     <section class="page">
         <div class="content">
             <h1>简介</h1>
-            <p>LiveNode是一个基于Node.js轻巧的web服务，帮助前端开发者解决本地跨域，代码刷新，以及SPA(单页应用)前后端服务分离，并且可以用于生产环境项目部署。</p>
+            <p>
+                <a href="https://github.com/Hzy0913/LiveNode" target="_blank" class="title-link">LiveNode</a>是一个基于Node.js轻巧的web服务，帮助前端开发者解决本地跨域，代码刷新，以及SPA(单页应用)前后端服务分离，并且可以用于生产环境项目部署。
+            </p>
         </div>
     </section>
     <section class="page" style="background-color: #fff">
         <div class="content">
             <h1>安装</h1>
-            <p>LiveNode是一个基于Node.js轻巧的web服务，帮助前端开发者解决本地跨域，代码刷新，以及SPA(单页应用)前后端服务分离，并且可以用于生产环境项目部署。</p>
+            <p>全局安装LiveNode脚手架工具</p>
+            <p class="code">npm install livenode-cli -g</p>
+        </div>
+    </section>
+    <section class="page">
+        <div class="content">
+            <h1>初始化</h1>
+            <p>创建项目</p>
+            <p class="code">livenode init</p>
+            <p>根据提示输入项目文件名称(不输入则生成默认名称)</p>
+            <p class="code">project name: my-project</p>
+            <p>输入要创建的项目模版(不输入内容即生成多页项目模板，输入 spa 则生成单页面应用项目模版)</p>
+            <p class="code">project templat: spa</p>
+            <p>cd进入生成的项目目录后，安装项目所需依赖</p>
+            <p class="code">cd my-project</p>
+            <p class="code">npm install</p>
+        </div>
+    </section>
+    <section class="page" style="background-color: #fff">
+        <div class="content">
+            <h1>服务命令</h1>
+            <p class="code">npm start</p>
+            <p>启动开发环境下的node.js服务</p>
+            <p class="code">npm restart</p>
+            <p>重启node.js服务，在开发环境下修改config.js配置文件后需要执行该命令重启服务</p>
+            <p class="code">npm build</p>
+            <p>启动生产环境下的node.js服务，在生产环境下修改配置文件不需要再执行npm restart命令重启，npm build会默认监听配置文件修改并自动重启服务。</p>
+            <p class="code">npm stop</p>
+            <p>停止node.js服务</p>
+            <p class="code">npm run list</p>
+            <p>查看node.js服务的状态</p>
+        </div>
+    </section>
+    <section class="page">
+        <div class="content">
+            <h1>文档</h1>
+            <p class="document">
+                <span>具体文档可以去</span>
+                <a href="https://github.com/Hzy0913/LiveNode" target="_blank">
+                    <img class="link-logo" src="img/gitHub.png" alt="">
+                </a>
+                <span style="margin: 0px 4px">or</span>
+                <a href="https://www.npmjs.com/package/livenode-cli" target="_blank">
+                    <img class="link-logo" style="width: 40px" src="img/npm.png">
+                </a>
+            </p>
+            <p class="code">请给个star吧。◔ ‸◔</p>
         </div>
     </section>
 <script>
