@@ -14,3 +14,6 @@ body{padding: 0;margin: 0px}
 .link-logo{width: 20px;text-decoration:none;float: left;margin: 0px 4px;}
 .document span{float: left}
 .document{overflow: hidden}
+@media (max-width: 600px) {
+    body{zoom: 0.4}
+}
