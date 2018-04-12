@@ -6,7 +6,7 @@
   "scripts": {
     "start": "pm2 start build/dev-server.js",
     "build": "pm2 start build/build.js -i max --watch",
-    "restart": "pm2 reload build",
+    "restart": "pm2 restart all",
     "stop": "pm2 stop all",
     "list": "pm2 list"
   },
