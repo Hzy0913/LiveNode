@@ -76,15 +76,15 @@ const proxyTable = [
 ```
 npm start
 ```
-启动开发环境下的node.js服务
+启动开发环境下的node.js服务(⚠️如果已经执行过一次npm start命令，需要先执行npm stop关闭服务，才可以再用 npm start启动服务，或者可以直接用npm restart 重启服务)
 ```
 npm restart
 ```
 重启node.js服务，在开发环境下修改`config.js`配置文件后需要执行该命令重启服务
 ```
-npm build
+npm run build
 ```
-启动生产环境下的node.js服务，在生产环境下修改配置文件不需要再执行npm restart命令重启，npm build会默认监听配置文件修改并自动重启服务。
+启动生产环境下的node.js服务，在生产环境下修改配置文件不需要再执行npm restart命令重启，npm run build会默认监听配置文件修改并自动重启服务。
 ```
 npm stop
 ```
