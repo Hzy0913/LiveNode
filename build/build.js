@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const timeout = require('connect-timeout');
 const proxy = require('http-proxy-middleware');
-const exec = require('child_process').exec;
 const app = express();
 const {proxyTable = [], reload = true, port, spaHistory = true, notFound = ''} = require('../config');
 const TIME_OUT = 30 * 1e3;

@@ -3,9 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const timeout = require('connect-timeout');
 const proxy = require('http-proxy-middleware');
-const exec = require('child_process').exec;
 const app = express();
-const {proxyTable = [], reload = true, port = 4000, spaHistory, notFound = ''} = require('../config');
+const {proxyTable = [], reload = true, spaHistory, notFound = ''} = require('../config');
 const TIME_OUT = 30 * 1e3;
 const filename = path.resolve();
 const bs = require("browser-sync").create('server');
@@ -32,22 +31,6 @@ if (!spaHistory && notFound) {
   });
 }
 app.listen(serverPort, () => {
-  const order = `lsof -i tcp:${port}`;
   const index = files.find(item => item === 'index.html') ? '' : `/${files.find(item => item.includes('.html'))}`;
-  exec(order, (err, stdout, stderr) => {
-    if(err){
-      bs.init({proxy: `http://localhost:${serverPort}${index}`,port:port,notify: true});
-      return;
-    }
-    stdout.split('\n').filter((line) => {
-      const p=line.trim().split(/\s+/);
-      const address=p[1];
-      if(address!=undefined && address!="PID"){
-        exec('kill '+ address, (err, stdout, stderr) =>{
-          if(err){return console.log('端口可能被占用，请重启服务！')};
-          bs.init({proxy: `http://localhost:${serverPort}${index}`,port:port,notify: true});
-        });
-      }
-    });
-  });
-});
+  bs.init({proxy: `http://localhost:${serverPort}${index}`,notify: true});
+})
